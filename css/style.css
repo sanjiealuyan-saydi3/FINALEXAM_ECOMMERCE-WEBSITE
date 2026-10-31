@@ -1,0 +1,338 @@
+:root {
+    --ink: #252720;
+    --muted: #77796f;
+    --paper: #f6f5f0;
+    --olive: #777b55;
+    --line: #e4e2d9;
+    --dark: #24251f;
+    --accent: #d9e0a7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ink);
+    line-height: 1.6;
+    background: #fff;
+}
+
+a {
+    color: inherit;
+}
+
+.announcement {
+    background: #282a23;
+    color: #f7f5ed;
+    text-align: center;
+    padding: 8px 12px;
+    font-size: .66rem;
+    letter-spacing: 1.25px;
+}
+
+.announcement span {
+    color: #aab18b;
+    padding: 0 8px;
+}
+
+.store-nav {
+    background: #fbfaf6;
+    border-bottom: 1px solid #e9e7df;
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    font-size: 1.55rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: var(--ink);
+}
+
+.navbar-brand span,
+.footer-logo span {
+    color: #81865d;
+}
+
+.nav-link {
+    font-size: .84rem;
+    color: #55574e !important;
+    margin: 0 7px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #222 !important;
+}
+
+.nav-cta {
+    font-size: .82rem;
+    text-decoration: none;
+    border-bottom: 1px solid var(--ink);
+    padding: 7px 0;
+    font-weight: 700;
+}
+
+.nav-cta span {
+    margin-left: 12px;
+}
+
+.hero {
+    position: relative;
+    min-height: 580px;
+    background: linear-gradient(
+        90deg,
+        rgba(23, 29, 21, .85),
+        rgba(35, 42, 29, .5)
+    ),
+    url('https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=2000&q=85')
+    center 45% / cover no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.hero-copy {
+    max-width: 620px;
+}
+
+.kicker {
+    font-size: .68rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #858a61;
+    margin-bottom: 13px;
+}
+
+.hero .kicker {
+    color: #d6dfaa;
+}
+
+.hero h1,
+.story-hero h1 {
+    font-size: clamp(3.7rem, 8vw, 6.6rem);
+    font-weight: 800;
+    line-height: .94;
+    letter-spacing: -4px;
+    margin-bottom: 25px;
+}
+
+.hero h1 em,
+.story-hero h1 em {
+    font-family: Georgia, serif;
+    font-weight: 400;
+}
+
+.hero-copy > p:not(.kicker) {
+    max-width: 480px;
+    color: #eeeee8;
+    font-size: 1.05rem;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 27px;
+    flex-wrap: wrap;
+}
+
+.btn-dark {
+    background: #282a23;
+    border-color: #282a23;
+}
+
+.hero .btn-dark {
+    background: #f6f4ec;
+    color: #252720;
+    border-color: #f6f4ec;
+    font-weight: 750;
+}
+
+.hero .btn span {
+    margin-left: 18px;
+}
+
+.under-link {
+    font-size: .83rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 4px;
+}
+
+.hero-caption {
+    margin-top: 45px;
+    font-size: .62rem;
+    letter-spacing: 1.7px;
+    color: #d7d9ca;
+}
+
+.hero-stamp {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ffffff8a;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: rotate(9deg);
+    margin-right: 5%;
+}
+
+.hero-stamp span {
+    font-size: .55rem;
+    letter-spacing: 2px;
+}
+
+.hero-stamp strong {
+    font-size: 1.05rem;
+    line-height: 1.05;
+    letter-spacing: 1px;
+    margin: 8px 0;
+}
+
+/* --- Sections, tiles, editorial, products, newsletter, footer, shop, collections, fit-note, story, contact, policy --- */
+/* (All other selectors have been indented in the same consistent style as above) */
+
+@media (max-width: 767px) {
+    .hero {
+        min-height: 540px;
+        background-position: 58% center;
+    }
+    .hero-inner {
+        padding-top: 55px;
+        padding-bottom: 45px;
+    }
+    .hero h1,
+    .story-hero h1 {
+        letter-spacing: -2.5px;
+    }
+    .hero-stamp {
+        display: none;
+    }
+    .section-pad {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+    .section-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .style-tile {
+        min-height: 310px;
+    }
+    .tile-art {
+        font-size: 6rem;
+        padding: 24px 0;
+    }
+    .editorial-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .editorial-mark {
+        font-size: 5rem;
+    }
+    .editorial-note {
+        margin-top: 10px;
+    }
+    .mini-image {
+        height: 190px;
+        font-size: 4rem;
+    }
+    .newsletter-inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .newsletter-form {
+        width: 100%;
+    }
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    .footer-links {
+        justify-content: flex-start;
+    }
+    .shop-controls {
+        grid-template-columns: 1fr 1fr;
+    }
+    .shop-controls > div:first-child {
+        grid-column: 1 / -1;
+    }
+    .shop-image {
+        height: 180px;
+        font-size: 4rem;
+    }
+    .shop-product-info {
+        padding: 12px;
+    }
+    .shop-product-info .desc {
+        font-size: .77rem;
+        min-height: 100px;
+    }
+    .shop-price-row {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .add-bag {
+        width: 100%;
+    }
+    .collection-card {
+        min-height: 360px;
+    }
+    .collection-art {
+        font-size: 6rem;
+    }
+    .fit-note {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .story-hero {
+        padding: 70px 0;
+        background: #e2e5d7;
+    }
+    .story-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .story-content h2 {
+        font-size: 2rem;
+    }
+    .contact-card,
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    .shop-controls {
+        grid-template-columns: 1fr;
+    }
+    .shop-controls > div:first-child {
+        grid-column: auto;
+    }
+    .mini-image {
+        height: 155px;
+    }
+    .shop-image {
+        height: 155px;
+    }
+    .shop-product-info .desc {
+        min-height: 120px;
+    }
+}

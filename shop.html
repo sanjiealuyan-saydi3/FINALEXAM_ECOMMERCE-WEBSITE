@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop Jackets | FORME</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement">
+    COMPLIMENTARY SHIPPING ON ORDERS OVER ₱2,500 <span>—</span> DEMO STORE
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light store-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">FORME<span>.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop jackets</a></li>
+          <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
+          <li class="nav-item"><a class="nav-link" href="our-story.html">Our story</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="nav-cta" href="shop.html">Find your fit <span>↗</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container section-pad shop-page">
+
+    <!-- Page Intro -->
+    <div class="page-intro">
+      <p class="kicker">THE JACKET SHOP</p>
+      <h1>Your next everyday layer.</h1>
+      <p>
+        Pick a style, choose your size, and find the jacket that fits your rotation.
+        Product details and prices are sample data for this demo store.
+      </p>
+    </div>
+
+    <!-- Shop Controls -->
+    <div class="shop-controls">
+      <div>
+        <label class="form-label" for="searchProducts">Search the collection</label>
+        <input id="searchProducts" class="form-control" type="search" placeholder="Search jackets...">
+      </div>
+      <div>
+        <label class="form-label" for="styleFilter">Style</label>
+        <select id="styleFilter" class="form-select">
+          <option value="all">All styles</option>
+          <option value="lightweight">Lightweight</option>
+          <option value="streetwear">Streetwear</option>
+          <option value="utility">Utility</option>
+          <option value="denim">Denim</option>
+        </select>
+      </div>
+      <div>
+        <label class="form-label" for="sortProducts">Sort by</label>
+        <select id="sortProducts" class="form-select">
+          <option value="featured">Featured</option>
+          <option value="low">Price: low to high</option>
+          <option value="high">Price: high to low</option>
+        </select>
+      </div>
+    </div>
+<br>
+    <!-- Product Grid -->
+    <div class="row g-4" id="shopGrid">
+
+      <!-- Product 1 -->
+      <div class="col-6 col-lg-4 shop-item" data-style="lightweight" data-name="daily zip jacket" data-price="1490">
+        <article class="shop-product">
+          <div class="shop-image mini-1">
+            <img src="images/olive.webp" height="300" width="200" alt="">
+          </div>
+          <div class="shop-product-info">
+            <p class="product-type">LIGHTWEIGHT / OLIVE</p>
+            <h2>Daily Zip Jacket</h2>
+            <p class="desc">
+              An easy, lightweight layer with a clean zip-front silhouette.
+              Made for daily errands, campus days, and casual plans.
+            </p>
+            <div class="size-row">
+              <label for="size1">Size</label>
+              <select id="size1" class="form-select form-select-sm size-select">
+                <option>S</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+            </div>
+            <div class="shop-price-row">
+              <strong>₱1,490</strong>
+              <button class="add-bag" data-product="Daily Zip Jacket">Add to bag +</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-6 col-lg-4 shop-item" data-style="streetwear" data-name="studio coach jacket" data-price="1790">
+        <article class="shop-product">
+          <div class="shop-image mini-2"><img src="images/streetwer2.webp" alt="" height="300" width="200"></div>
+          <div class="shop-product-info">
+            <p class="product-type">STREETWEAR / BLACK</p>
+            <h2>Studio Coach Jacket</h2>
+            <p class="desc">
+              Relaxed fit, snap-button front, and an understated streetwear look
+              that works over a tee or hoodie.
+            </p>
+            <div class="size-row">
+              <label for="size2">Size</label>
+              <select id="size2" class="form-select form-select-sm size-select">
+                <option>S</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+            </div>
+            <div class="shop-price-row">
+              <strong>₱1,790</strong>
+              <button class="add-bag" data-product="Studio Coach Jacket">Add to bag +</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-6 col-lg-4 shop-item" data-style="utility" data-name="field utility jacket" data-price="2190">
+        <article class="shop-product">
+          <div class="shop-image mini-3"><img src="images/field uti jackets9_1_l.jpg" alt="" height="300" width="200"></div>
+          <div class="shop-product-info">
+            <p class="product-type">UTILITY / SAND</p>
+            <h2>Field Utility Jacket</h2>
+            <p class="desc">
+              A structured utility-inspired jacket with practical pocket styling
+              and a versatile neutral tone.
+            </p>
+            <div class="size-row">
+              <label for="size3">Size</label>
+              <select id="size3" class="form-select form-select-sm size-select">
+                <option>S</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+            </div>
+            <div class="shop-price-row">
+              <strong>₱2,190</strong>
+              <button class="add-bag" data-product="Field Utility Jacket">Add to bag +</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-6 col-lg-4 shop-item" data-style="denim" data-name="classic denim layer" data-price="1990">
+        <article class="shop-product">
+          <div class="shop-image mini-4"><img src="images/denim blue).webp" alt="" height="300" width="200"></div>
+          <div class="shop-product-info">
+            <p class="product-type">DENIM / BLUE</p>
+            <h2>Classic Denim Layer</h2>
+            <p class="desc">
+              A timeless denim-style layer with a familiar shape,
+              easy to pair with plain tees and sneakers.
+            </p>
+            <div class="size-row">
+              <label for="size4">Size</label>
+              <select id="size4" class="form-select form-select-sm size-select">
+                <option>S</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+            </div>
+            <div class="shop-price-row">
+              <strong>₱1,990</strong>
+              <button class="add-bag" data-product="Classic Denim Layer">Add to bag +</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-6 col-lg-4 shop-item" data-style="lightweight" data-name="weekend windbreaker" data-price="1690">
+        <article class="shop-product">
+          <div class="shop-image mini-5"><img src="images/stone.jpg" alt="" height="300" width="200"></div>
+          <div class="shop-product-info">
+            <p class="product-type">LIGHTWEIGHT / STONE</p>
+            <h2>Weekend Windbreaker</h2>
+            <p class="desc">
+              A sporty, easy-to-pack outer layer for breezy mornings,
+              travel, and weekend walks.
+            </p>
+            <div class="size-row">
+              <label for="size4">Size</label>
+              <select id="size4" class="form-select form-select-sm size-select">
+                <option>S</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+            </div>
+            <div class="shop-price-row">
+              <strong>₱1,900</strong>
+              <button class="add-bag" data-product="Classic Denim Layer">Add to bag +</button>
+            </div>
+
+<!-- Product 6 -->
+      <div class="col-6 col-lg-4 shop-item" data-style="leather" data-name="cool leather" data-price="1690">
+        <article class="shop-product">
+          <div class="shop-image mini-5"><img src="images/Mens-Distressed-Leather-Jacket.webp" alt="" height="300" width="200"></div>
+          <div class="shop-product-info">
+            <p class="product-type">LEATHER / HARD</p>
+            <h2>Weekend Windbreaker</h2>
+            <p class="desc">
+              A cool and perfect for ride.
+            </p>
+            <div class="size-row">
+              <label for="size4">Size</label>
+              <select id="size4" class="form-select form-select-sm size-select">
+                <option>S</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+            </div>
+            <div class="shop-price-row">
+              <strong>₱1,500</strong>
+              <button class="add-bag" data-product="Classic Denim Layer">Add to bag +</button>
+            </div>
+    </div>
+</body>
